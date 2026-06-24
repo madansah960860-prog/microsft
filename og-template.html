@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Expanded:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <style>
+    * { margin: 0; box-sizing: border-box; }
+    body { width: 1200px; height: 630px; overflow: hidden;
+      font-family: "Archivo", system-ui, sans-serif;
+      color: oklch(0.965 0.006 240);
+      background:
+        radial-gradient(110% 90% at 88% -10%, oklch(0.66 0.14 242 / 0.30), transparent 55%),
+        radial-gradient(90% 80% at 0% 110%, oklch(0.80 0.135 76 / 0.12), transparent 55%),
+        oklch(0.150 0.024 240);
+      position: relative;
+    }
+    .grid { position: absolute; inset: 0; opacity: 0.5;
+      background-image:
+        linear-gradient(oklch(0.32 0.03 235 / 0.35) 1px, transparent 1px),
+        linear-gradient(90deg, oklch(0.32 0.03 235 / 0.35) 1px, transparent 1px);
+      background-size: 60px 60px; }
+    .wrap { position: relative; padding: 76px 84px; height: 100%; display: flex; flex-direction: column; }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .brand__word { font-family: "Archivo Expanded", sans-serif; font-weight: 800; font-size: 34px; letter-spacing: -0.02em; }
+    .kick { font-family: "JetBrains Mono", monospace; font-size: 19px; letter-spacing: 0.08em;
+      text-transform: uppercase; color: oklch(0.80 0.014 240); margin-top: auto; }
+    .kick b { color: oklch(0.80 0.135 76); font-weight: 500; }
+    h1 { font-family: "Archivo Expanded", sans-serif; font-weight: 800; font-size: 78px;
+      line-height: 1.0; letter-spacing: -0.03em; margin: 22px 0 26px; max-width: 17ch; }
+    .sub { font-size: 27px; color: oklch(0.80 0.014 240); max-width: 30ch; line-height: 1.45; }
+    .foot { margin-top: auto; display: flex; gap: 28px; font-family: "JetBrains Mono", monospace;
+      font-size: 19px; color: oklch(0.68 0.018 240); }
+    .foot span b { color: oklch(0.66 0.14 242); font-weight: 500; }
+    .dot { width: 11px; height: 11px; border-radius: 50%; background: oklch(0.77 0.15 155);
+      box-shadow: 0 0 0 5px oklch(0.77 0.15 155 / 0.18); display: inline-block; }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" width="40" height="40">
+        <circle cx="16" cy="16" r="13.5" fill="none" stroke="#5a6a82" stroke-width="1.25"/>
+        <circle cx="16" cy="16" r="8.5" fill="none" stroke="#4d8df0" stroke-width="1.5"/>
+        <path d="M16 4.2 V9 M16 23 V27.8 M4.2 16 H9 M23 16 H27.8" stroke="#5a6a82" stroke-width="1.25" stroke-linecap="round"/>
+        <circle cx="16" cy="16" r="2.6" fill="#e0a83c"/>
+        <path d="M16 16 L22.2 9.8" stroke="#e0a83c" stroke-width="1.75" stroke-linecap="round"/>
+      </svg>
+      <span class="brand__word">Comsol</span>
+    </div>
+    <p class="kick" style="margin-top:64px"><span class="dot"></span>&nbsp; Independent IT provider · <b>B2B</b></p>
+    <h1>Engineered uptime for the Windows office.</h1>
+    <p class="sub">Subscription Windows support &amp; genuine business license trading — by email.</p>
+    <div class="foot">
+      <span><b>SLA</b> 1 business hr</span>
+      <span><b>WIN</b> 10 · 11 · Server</span>
+      <span><b>CH</b> Email, on record</span>
+    </div>
+  </div>
+</body>
+</html>
